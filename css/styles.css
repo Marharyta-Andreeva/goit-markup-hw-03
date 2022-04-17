@@ -81,8 +81,13 @@ img {
     margin-right: 93px;
 }
 
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .header-first-list {
-    display: flex;    
+    display: flex;
 }
 
 .header-second-list {
@@ -104,6 +109,10 @@ img {
     margin-right: 50px;
 }
 
+.header-second-item + .header-second-item {
+    margin-left: 50px;
+}
+
 .header-mail,
 .header-tel {
     font-weight: 500;
@@ -111,6 +120,8 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -362,6 +373,7 @@ img {
     color: #ffffff;
     margin-right: 0;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .footer-address,
