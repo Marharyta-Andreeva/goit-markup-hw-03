@@ -14,6 +14,7 @@ body {
 }
 
 p,
+a,
 h1,
 h2,
 h3,
@@ -62,8 +63,6 @@ img {
 /*------------------------------------------HEADER------------------------------------------*/
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -97,6 +96,8 @@ img {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-item:not(:last-child) {
@@ -139,6 +140,10 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
+    max-width: 696px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -233,10 +238,6 @@ img {
     background-color: #F5F4FA;
 }
 
-.team-img {
-    margin-bottom: 30px;
-}
-
 .team-list {
     display: flex;
     margin-left: -30px;
@@ -269,13 +270,18 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 30px;
+}
+
+.team-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*------------------------------------------PORTFOLIO------------------------------------------*/
 
 .portfolio-first-list {
     margin-bottom: 50px;
+    justify-content: center;
     display: flex;
 }
 
@@ -321,8 +327,10 @@ img {
     background-color: var(--accent-color);
 }
 
-.portfolio-img {
-    margin-bottom: 20px;
+.card-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 .portfolio-title {
@@ -332,7 +340,6 @@ img {
     letter-spacing: 0.06em;
     color:var(--main-text-color);
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
 .portfolio-text {
@@ -341,8 +348,6 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;    
     color: var(--primary-text-color);
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
 
 /*------------------------------------------FOOTER------------------------------------------*/
@@ -355,6 +360,8 @@ img {
 
 .footer .logo {   
     color: #ffffff;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
 
 .footer-address,
@@ -367,11 +374,7 @@ img {
     color: #FFFFFF;
 }
 
-.footer-list {
-    margin-top: 20px;
-}
-
-.footer-item {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
